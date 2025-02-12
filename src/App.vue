@@ -1,13 +1,12 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import MessageBox from '@/components/MessageBox'
 
 MessageBox.alert({
   title: 'TITLE',
   btnText: 'OK',
   content: 'CONTENT',
-  close: () => {
-    console.log('close')
-  }
+}, () => {
+  console.log('close')
 })
 </script>
 
